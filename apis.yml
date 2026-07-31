@@ -1,7 +1,25 @@
 aid: one
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/one.png
 name: One
-description: One is a company surfaced as a portfolio company of obvious-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: OnePay (formerly One / One Finance) is a Walmart-backed consumer fintech
+  that delivers a single mobile app combining banking, high-yield savings, a CashRewards
+  debit card, a credit-building card, buy-now-pay-later, investing, cryptocurrency
+  trading, and tax filing. Banking services are provided through partner banks Coastal
+  Community Bank and Lead Bank (Members FDIC). The product is consumer-facing with no
+  public developer API; a partner/developer portal exists behind authentication at
+  developer.onepay.com. Originally surfaced as a portfolio company of Obvious Ventures
+  and added to the API Evangelist network as a lead for enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/one/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,19 @@ x-backed-by:
 - obvious-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebrand: one-finance -> one (one.app) -> onepay (onepay.com)
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fintech
+- Banking
+- Payments
+- Consumer Finance
+- Neobank
+- Investing
+- Cryptocurrency
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +48,30 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://onefinance.com
+  url: https://www.onepay.com
+- type: DeveloperPortal
+  name: OnePay Developers (authentication-gated)
+  url: https://developer.onepay.com
+- type: Support
+  name: Help Center
+  url: https://help.onepay.com
+- type: Blog
+  url: https://www.onepay.com/blog
+- type: StatusPage
+  name: OnePay Status
+  url: https://status.onepay.com
+- type: TermsOfService
+  url: https://www.onepay.com/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.onepay.com/legal/privacy-policies
+- type: Licenses
+  url: https://www.onepay.com/legal/licenses
+- type: Careers
+  url: https://www.onepay.com/careers
+- type: DomainSecurity
+  url: security/one-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
